@@ -41,4 +41,4 @@ QueryMate enables users to:
 
 ## Performance
 
-The initial page load time is approximately 0.8–1.2 seconds, as measured using the Performance tab in Chrome DevTools.
+The initial page load time is approximately 0.8 – 1.2 seconds, as measured using the Performance tab in Chrome DevTools.
