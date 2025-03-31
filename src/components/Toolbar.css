@@ -1,0 +1,139 @@
+.toolbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.75rem;
+background-color: var(--card-bg);
+border-radius: 4px;
+box-shadow: var(--shadow);
+margin-bottom: 1rem;
+transition: background-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.execute-button {
+background-color: var(--success-color);
+color: white;
+border: none;
+border-radius: 4px;
+padding: 0.5rem 1rem;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 0.5rem;
+font-weight: 500;
+transition: background-color 0.2s;
+}
+
+.execute-button:hover:not(:disabled) {
+background-color: #388e3c;
+}
+
+.execute-button:disabled {
+opacity: 0.7;
+cursor: not-allowed;
+}
+
+.execute-button.disabled-csv {
+background-color: #aaa;
+border: 1px dashed var(--error-color);
+position: relative;
+}
+
+.execute-button.disabled-csv::after {
+content: "CSV file required";
+position: absolute;
+font-size: 0.65rem;
+bottom: -1.25rem;
+left: 0;
+color: var(--error-color);
+white-space: nowrap;
+}
+
+.play-icon {
+font-size: 0.75rem;
+}
+
+.spinner {
+width: 16px;
+height: 16px;
+border: 2px solid rgba(255, 255, 255, 0.3);
+border-radius: 50%;
+border-top-color: #fff;
+animation: spin 1s linear infinite;
+display: inline-block;
+}
+
+@keyframes spin {
+to {
+    transform: rotate(360deg);
+}
+}
+
+.toolbar-actions {
+display: flex;
+gap: 0.5rem;
+}
+
+.action-button {
+background: none;
+border: 1px solid var(--border-color);
+color: var(--text-color);
+padding: 0.5rem;
+border-radius: 4px;
+cursor: pointer;
+display: flex;
+align-items: center;
+gap: 0.25rem;
+font-size: 0.85rem;
+transition: all var(--transition-speed);
+}
+
+.action-button:hover:not(:disabled) {
+background-color: var(--primary-color);
+color: white;
+border-color: var(--primary-color);
+}
+
+.action-button:disabled {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+.icon {
+font-size: 1rem;
+}
+
+.data-source-indicator {
+display: flex;
+align-items: center;
+gap: 0.25rem;
+padding: 0.25rem 0.5rem;
+border: 1px solid var(--border-color);
+border-radius: 4px;
+font-size: 0.85rem;
+background-color: var(--table-row-hover);
+max-width: 200px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+transition: all var(--transition-speed);
+}
+
+@media (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+}
+
+.toolbar-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.data-source-indicator {
+    flex: 1 0 100%;
+    max-width: none;
+}
+}
