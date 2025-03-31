@@ -2,16 +2,6 @@
 
 QueryMate is a lightweight SQL query explorer that allows users to execute SQL-like queries on CSV data. The application is built with React and Vite, and it features an interactive UI with a Monaco Editor for editing SQL queries, smooth dark mode toggling, dynamic result tables, and CSV export functionality.
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Technologies and Packages](#technologies-and-packages)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Performance and Optimizations](#performance-and-optimizations)
-- [Deployment](#deployment)
-- [License](#license)
-
 ## Overview
 
 QueryMate enables users to:
@@ -48,3 +38,7 @@ QueryMate enables users to:
    ```bash
 
    npm run dev
+
+## Performance
+
+The initial page load time is approximately 0.8–1.2 seconds, as measured using the Performance tab in Chrome DevTools.
