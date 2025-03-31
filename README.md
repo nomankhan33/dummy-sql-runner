@@ -37,3 +37,14 @@ QueryMate enables users to:
    ```bash
    git clone https://github.com/yourusername/my-app.git
    cd my-app
+
+2. **Install Dependencies:**
+
+   ```bash
+   npm install
+
+3. **Run the Development Server:**
+
+   ```bash
+
+   npm run dev
