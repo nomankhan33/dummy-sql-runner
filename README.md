@@ -25,8 +25,8 @@ QueryMate enables users to:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/my-app.git
-   cd my-app
+   git clone https://github.com/nomankhan33/dummy-sql-runner.git
+   cd dummy-sql-runner
 
 2. **Install Dependencies:**
 
